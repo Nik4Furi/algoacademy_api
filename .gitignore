@@ -1,0 +1,7 @@
+# ------Here We are stopped to exceed the folders------
+node_modules/
+
+# ----------Here We are stopped to exceed the files-----
+yarn.lock
+.env
+uploads/

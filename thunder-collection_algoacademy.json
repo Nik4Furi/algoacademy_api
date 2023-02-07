@@ -1,0 +1,252 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "algoacademy",
+    "dateExported": "2023-02-05T15:44:44.683Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "be235d16-dc07-4c3c-98e4-8bb7e2b4b815",
+            "name": "Authentications",
+            "containerId": "",
+            "created": "2023-01-03T08:21:40.599Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "062099a5-1643-4c92-b736-ff16c17c7e23",
+            "name": "Clients related end points",
+            "containerId": "",
+            "created": "2023-01-04T08:42:14.534Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "ea9afb60-48fe-423d-9e90-4322e49bede8",
+            "name": "Courses CRUD",
+            "containerId": "",
+            "created": "2023-01-17T14:47:09.206Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "ccd3a596-61fe-4588-a130-859cfae2ea13",
+            "name": "Developers Points",
+            "containerId": "",
+            "created": "2023-01-18T16:04:27.177Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "24621ebb-ad22-4ad0-b41e-08b5b3ba9a91",
+            "colId": "88ab23f5-a863-49c7-82fa-36e305a63c7d",
+            "containerId": "be235d16-dc07-4c3c-98e4-8bb7e2b4b815",
+            "name": "register the users",
+            "url": "http://localhost:8000/api/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-01-03T08:22:00.099Z",
+            "modified": "2023-01-17T15:23:30.182Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"mentor123\",\n  \"email\":\"mentor123@gmail.com\",\n  \"password\":\"hello\",\n  \"cpassword\":\"hello\",\n  \"profession\":\"student\",\n  \"tag\":\"Mentor\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2d90ff67-05d0-4afa-a638-ef84d541663b",
+            "colId": "88ab23f5-a863-49c7-82fa-36e305a63c7d",
+            "containerId": "be235d16-dc07-4c3c-98e4-8bb7e2b4b815",
+            "name": "login the users",
+            "url": "http://localhost:8000/api/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-01-04T08:14:44.910Z",
+            "modified": "2023-01-18T14:58:57.946Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"username\":\"mentor123\",\n  \"email\":\"mentor123@gmail.com\",\n  \"password\":\"hello\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2528be87-cf9d-4e90-8612-4eb9e0a6ee1e",
+            "colId": "88ab23f5-a863-49c7-82fa-36e305a63c7d",
+            "containerId": "be235d16-dc07-4c3c-98e4-8bb7e2b4b815",
+            "name": "get the detials of the login uses",
+            "url": "http://localhost:8000/api/auth/getUser",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-01-04T08:15:01.399Z",
+            "modified": "2023-02-05T15:41:24.462Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VycyI6eyJpZCI6IjYzYzZiZDcyNDQ0ZjkxZDQzMDU0ZTU3YiJ9LCJpYXQiOjE2NzU2MTE2NjJ9.ngo0ACpZvN3wcpTGtljp-2Mhjy3Tu1M9LtDwz3ShSII"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7eba695e-42a6-4586-b5ff-b2902ab52960",
+            "colId": "88ab23f5-a863-49c7-82fa-36e305a63c7d",
+            "containerId": "062099a5-1643-4c92-b736-ff16c17c7e23",
+            "name": "Help or contact with us",
+            "url": "http://localhost:8000/api/users/contact",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-01-04T08:42:56.577Z",
+            "modified": "2023-01-05T09:29:58.627Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"fullname\":\"Nikhil Gurjar\",\n  \"email\":\"nik23@gmailsw.com\",\n  \"phone\":\"0384034\",\n  \"profession\":\"software\",\n  \"concern\":\"Hey yofur work is not good plz implement that\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1d52eab8-50ee-4054-947e-69fa362cdd8e",
+            "colId": "88ab23f5-a863-49c7-82fa-36e305a63c7d",
+            "containerId": "ea9afb60-48fe-423d-9e90-4322e49bede8",
+            "name": "Adding a new course",
+            "url": "http://localhost:8000/api/courses/add",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-01-17T14:47:22.075Z",
+            "modified": "2023-02-05T15:43:39.136Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VycyI6eyJpZCI6IjYzYzZiZDcyNDQ0ZjkxZDQzMDU0ZTU3YiJ9LCJpYXQiOjE2NzQwNTM5Mzd9.gua6KaYJfM1jHV4cBYVxNBsdvWR54QTgINiSh_HY2BI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "I am adding a another tittle"
+                    },
+                    {
+                        "name": "description",
+                        "value": "We are adding a new course is always free for everyone"
+                    },
+                    {
+                        "name": "developers",
+                        "value": "Rohan,Sohan,Ram,Shyam"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "myfile",
+                        "value": "c:\\Users\\HP\\Downloads\\dynamices_err_3.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5414d299-72de-4c7c-bdd9-b5281853138c",
+            "colId": "88ab23f5-a863-49c7-82fa-36e305a63c7d",
+            "containerId": "ccd3a596-61fe-4588-a130-859cfae2ea13",
+            "name": "Find mentor with id",
+            "url": "http://localhost:8000/api/search/mentor/63c6bd72444f91d43054e57b",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-01-18T16:04:38.916Z",
+            "modified": "2023-01-18T16:06:34.872Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "397582b3-874f-4093-bfdd-c50b6274d811",
+            "colId": "88ab23f5-a863-49c7-82fa-36e305a63c7d",
+            "containerId": "ccd3a596-61fe-4588-a130-859cfae2ea13",
+            "name": "find files with id",
+            "url": "http://localhost:8000/api/search/files/63c813141357de63f9ba556c",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-01-18T16:04:50.299Z",
+            "modified": "2023-01-18T16:05:46.281Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0c968e27-65ba-4a04-8441-893f37c31c5f",
+            "colId": "88ab23f5-a863-49c7-82fa-36e305a63c7d",
+            "containerId": "ea9afb60-48fe-423d-9e90-4322e49bede8",
+            "name": "fetching all the courses",
+            "url": "http://localhost:8000/api/courses/fetch",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-01-19T14:07:46.616Z",
+            "modified": "2023-01-19T14:58:55.112Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VycyI6eyJpZCI6IjYzYzZiZDcyNDQ0ZjkxZDQzMDU0ZTU3YiJ9LCJpYXQiOjE2NzQwNTM5Mzd9.gua6KaYJfM1jHV4cBYVxNBsdvWR54QTgINiSh_HY2BI"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "db61e351-8796-4231-9eaa-b3ac131c4253",
+            "colId": "88ab23f5-a863-49c7-82fa-36e305a63c7d",
+            "containerId": "ea9afb60-48fe-423d-9e90-4322e49bede8",
+            "name": "Deleting a course",
+            "url": "http://localhost:8000/api/courses/delete/63c95a8bc4c9a77ee89ee045",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2023-01-19T14:34:46.896Z",
+            "modified": "2023-01-19T15:02:25.306Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VycyI6eyJpZCI6IjYzYzZiZDcyNDQ0ZjkxZDQzMDU0ZTU3YiJ9LCJpYXQiOjE2NzQwNTM5Mzd9.gua6KaYJfM1jHV4cBYVxNBsdvWR54QTgINiSh_HY2BI"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "96bf05e2-a657-4689-8aae-3363dc715907",
+            "colId": "88ab23f5-a863-49c7-82fa-36e305a63c7d",
+            "containerId": "ea9afb60-48fe-423d-9e90-4322e49bede8",
+            "name": "Updating a course",
+            "url": "http://localhost:8000/api/courses/update/63d5335c783b13d8830e21f8",
+            "method": "PATCH",
+            "sortNum": 100000,
+            "created": "2023-01-19T14:35:06.601Z",
+            "modified": "2023-01-28T14:38:54.104Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VycyI6eyJpZCI6IjYzYzZiZDcyNDQ0ZjkxZDQzMDU0ZTU3YiJ9LCJpYXQiOjE2NzQwNTM5Mzd9.gua6KaYJfM1jHV4cBYVxNBsdvWR54QTgINiSh_HY2BI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "a new updating tittle"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}
